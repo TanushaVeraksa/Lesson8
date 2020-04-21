@@ -1,0 +1,313 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  font-size: 10px;
+}
+
+.wrapper {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 2px solid #F1F1F1;
+}
+
+.icons {
+  width: calc(20em + 0.5vw);
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icons button {
+  height: 72px;
+  background-color: #FFFFFF;
+  padding: 1em;
+  border: none;
+  border-right: 2px solid #F1F1F1;
+  border-left: none solid #F1F1F1;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(10em + 30vw);
+}
+
+.header__search input {
+  background-color: #F8F8F8;
+  border: none;
+  text-transform: capitalize;
+  color: #C8C8C8;
+  font-size: calc(11px + 0.5vw);
+}
+
+.header__search button {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5em 1em;
+  width: 50%;
+  background-color: #F8F8F8;
+  border-radius: 1em;
+}
+
+.logo {
+  width: calc(7em + 0.5vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icons-right {
+  width: calc(18em + 0.5vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icons-right button {
+  background-color: #FFFFFF;
+  padding: 1em;
+  border: none;
+  border-right: none solid #F1F1F1;
+  border-left: 2px solid #F1F1F1;
+}
+
+.model {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: calc(20em + 5vw);
+}
+
+.model div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.model h5 {
+  color: #FC6664;
+  font-size: calc(1rem + 0.25vw);
+}
+
+.model h6 {
+  font-size: calc(0.8rem + 0.25vw);
+  color: #BFBFBF;
+}
+
+.model .chircles {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.model .chircles .chircle {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #BFBFBF;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: calc(7em + 0.5vw);
+  height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FC735B), to(#FD5272));
+  background: linear-gradient(to bottom, #FC735B, #FD5272);
+  padding-top: 5%;
+}
+
+.navigation nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 65%;
+}
+
+.navigation nav div a {
+  color: white;
+  font-size: calc(1em + 0.5vw);
+  text-decoration: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 47%;
+}
+
+.navigation .button button {
+  background: none;
+  border: none;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5%;
+  }
+  .model {
+    width: 90%;
+  }
+  .icons-right {
+    margin: 0 auto;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .icons-right button {
+    border: none;
+  }
+  .icons {
+    width: 70%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .icons button {
+    border: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
