@@ -1,6 +1,7 @@
 @import './resets';
 @import './variables';
 @import './mixin';
+@import './main.scss';
 
 body {
     background-color: $white;
@@ -17,6 +18,7 @@ header {
     flex-wrap: wrap;
     width: 100%;
     border-bottom: 2px solid $gray;
+    position: relative;
 }
 
 .icons {
@@ -32,7 +34,6 @@ header {
 .header__search {
     @include flexCenter;
     width: calc(20em + 30vw);
-
     input {
         background-color: $light-gray;
         border: $without;
@@ -56,7 +57,7 @@ header {
 }
 
 .logo {
-    width: calc(7em + 0.5vw);
+    width: 6%;
     @include flexCenter;
 }
 
@@ -98,8 +99,8 @@ header {
 .navigation {
     @include flexForNavigation;
     justify-content: flex-start;
-    width: calc(7em + 0.5vw);
-    height: 90vh;
+    width: 6%;
+    height: 100vh;
     background: linear-gradient(to bottom, $orange, $purple);
     padding-top: 1.5%;
     nav {
@@ -120,6 +121,7 @@ header {
         justify-content: flex-end;
         align-items: center;
         height: 47%;
+        margin-bottom: 15%;
         button {
             background: $without;
             border: $without;
@@ -131,24 +133,21 @@ header {
 .statistics {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
-    width: calc(100% - (7em + 0.5vw));
-    position: absolute;
+    width: 100%;
     right: 0;
-    margin-top: 2em;
+    padding: 2em 0;
+    background-color: red;
     .statistic-value {
         display: flex;
-        width: calc(35em + 0.8vw);
-        h3 {
-            width: 80%;
-            font-size: calc(1em + 0.5vw);
-            padding: 1em 1em;
-        }
+        justify-content: space-around;
+        width: calc(35em + 1vw);
     }
     .number-statistic {
         @include flexColumn;
-        width: 50%;
         position: relative;
+         width: 50%;
         h5 {
             font-size: calc(0.5em + 0.5vw);
             color: #777777;
