@@ -31,7 +31,7 @@ header {
 
 .header__search {
     @include flexCenter;
-    width: calc(10em + 30vw);
+    width: calc(20em + 30vw);
 
     input {
         background-color: $light-gray;
@@ -71,9 +71,9 @@ header {
 .model {
     display: flex;
     justify-content: space-around;
-    width: calc(20em + 5vw);
+    width: calc(14em + 5vw);
     div {
-        width: 50%;
+        width: 40%;
         @include flexColumn;
     }
     h5 {
@@ -101,7 +101,7 @@ header {
     width: calc(7em + 0.5vw);
     height: 90vh;
     background: linear-gradient(to bottom, $orange, $purple);
-    padding-top: 5%;
+    padding-top: 1.5%;
     nav {
         @include flexForNavigation;
         height: 65%;
@@ -127,6 +127,74 @@ header {
         }
     }
 }
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: calc(100% - (7em + 0.5vw));
+    position: absolute;
+    right: 0;
+    margin-top: 2em;
+    .statistic-value {
+        display: flex;
+        width: calc(35em + 0.8vw);
+        h3 {
+            width: 80%;
+            font-size: calc(1em + 0.5vw);
+            padding: 1em 1em;
+        }
+    }
+    .number-statistic {
+        @include flexColumn;
+        width: 50%;
+        position: relative;
+        h5 {
+            font-size: calc(0.5em + 0.5vw);
+            color: #777777;
+            font-weight: bold;
+        }
+        h4 {
+            font-size: calc(1em + 0.7vw);
+            font-weight: bold;
+        }
+        .statis-span{
+            display: flex;
+            width: 60%;
+            position: relative;
+            justify-content: space-around;
+        }
+        
+        span {
+            display: flex;
+            justify-content: flex-end;
+            font-size: calc(0.5em + 0.5vw);
+            color: #BFBFBF;
+            width: 3em;
+            position: relative;
+            &:nth-child(odd)::before {
+                content: " ";
+                @include triangleTop;
+                position: absolute;
+                left:0;
+                bottom: 0.4em;
+            }
+            &:nth-child(even)::before {
+                content: " ";
+                @include triangleBottom;
+                position: absolute;
+                left:0;
+                bottom: 0.4em;
+            }
+        }
+    }
+}
+
+.main {
+    width: calc(100% - (10em + 0.5vw));
+    background-color: red;
+}
+
 @include mobile {
 
     .navigation {
@@ -155,6 +223,9 @@ header {
         button {
             border:$without;
         }
+    }
+    .statistics {
+        width: 100%;
     }
 }
 

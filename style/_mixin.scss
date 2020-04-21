@@ -32,8 +32,20 @@
     justify-content: space-around;
 }
 
+@mixin triangleBottom {
+    border-top: 6px solid #FD5670;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+@mixin triangleTop {
+    border-bottom: 6px solid #A889E9;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
 @mixin mobile {
-    @media (max-width: 800px) {
+    @media (max-width: 768px) {
         @content;
     }
 }
