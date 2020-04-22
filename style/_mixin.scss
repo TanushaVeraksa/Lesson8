@@ -44,6 +44,15 @@
     border-right: 3px solid transparent;
 }
 
+@mixin flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin shadowAround {
+   box-shadow: 0 0 5px 5px rgb(214, 213, 213);
+}
+
 @mixin mobile {
     @media (max-width: 768px) {
         @content;

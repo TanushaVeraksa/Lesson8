@@ -59,6 +59,8 @@ header {
 .logo {
     width: 6%;
     @include flexCenter;
+    box-shadow: 5px 0 8px 5px  #DADADA;
+    z-index: 5;   
 }
 
 .icons-right {
