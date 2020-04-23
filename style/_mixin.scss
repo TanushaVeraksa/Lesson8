@@ -14,8 +14,8 @@
 
 @mixin chircle {
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 4.5px;
+    height: 4.5px;
     background-color: $chircle;
 }
 
@@ -49,8 +49,75 @@
     flex-wrap: wrap;
 }
 
+@mixin buttonChart {
+    font-size: calc(10px + 0.2vw);
+    border: none;
+}
+
+@mixin indicator {
+    margin: .5em;
+    width: 125px; 
+    height: 125px;
+    position: relative;
+    border-radius: 50%;
+    background-image: linear-gradient(240deg, transparent 50%, #8664C5 55%),
+    linear-gradient(20deg, #E9E9E9 50%, #8664C5 55%);
+    
+    &:after {
+        border-radius: 50%;
+        display: block;
+        content: "";
+        background: #fff;
+        position: absolute;
+        left: 15px;
+        top:  15px;
+        height: 95px;
+        width: 95px;
+    }
+}
+
+@mixin chircleInIndicator {
+    height: 70px;
+    width: 70px;
+    z-index: 100;
+    box-shadow: 0 0 5px 5px rgb(214, 213, 213);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textInIndicator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+}
+
+@mixin styleForTextInIndicator {
+    font-weight: 800;
+    font-size: 25px;
+    background: linear-gradient(45deg, #B26AE1 33%, #7A5EBE 66%, #6359B0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+}
+
+
 @mixin shadowAround {
    box-shadow: 0 0 5px 5px rgb(214, 213, 213);
+}
+
+
+@mixin  textStyleForCustomers {
+    color: #5c5c5c;
+    font-size: calc(1rem + 0.3vw);
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 @mixin mobile {

@@ -1,7 +1,6 @@
 @import './resets';
 @import './variables';
 @import './mixin';
-@import './main.scss';
 
 body {
     background-color: $white;
@@ -10,7 +9,6 @@ body {
 header {
     width: 100%;
     display: flex;
-    
 }
 
 .header {
@@ -93,6 +91,7 @@ header {
         align-items: flex-end;
         .chircle {
             @include chircle;
+            margin: 0.1em;
         }
     }
 }
@@ -102,9 +101,8 @@ header {
     @include flexForNavigation;
     justify-content: flex-start;
     width: 6%;
-    height: 100vh;
+    min-height: 100%;
     background: linear-gradient(to bottom, $orange, $purple);
-    padding-top: 1.5%;
     nav {
         @include flexForNavigation;
         height: 65%;
@@ -140,7 +138,6 @@ header {
     width: 100%;
     right: 0;
     padding: 2em 0;
-    background-color: red;
     .statistic-value {
         display: flex;
         justify-content: space-around;
@@ -158,35 +155,40 @@ header {
         h4 {
             font-size: calc(1em + 0.7vw);
             font-weight: bold;
+            background: linear-gradient(45deg, #FD5570 33%, #FC6B61 66%, #FC7758);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #0B2349;
+            display: table;
         }
-        .statis-span{
-            display: flex;
-            width: 60%;
-            position: relative;
-            justify-content: space-around;
+    }
+}
+
+.statis-span{
+    display: flex;
+    width: 60%;
+    position: relative;
+    justify-content: space-around;
+    span {
+        display: flex;
+        justify-content: flex-end;
+        font-size: calc(0.5em + 0.5vw);
+        color: #BFBFBF;
+        width: 3em;
+        position: relative;
+        &:nth-child(odd)::before {
+            content: " ";
+            @include triangleTop;
+            position: absolute;
+            left:0;
+            bottom: 0.4em;
         }
-        
-        span {
-            display: flex;
-            justify-content: flex-end;
-            font-size: calc(0.5em + 0.5vw);
-            color: #BFBFBF;
-            width: 3em;
-            position: relative;
-            &:nth-child(odd)::before {
-                content: " ";
-                @include triangleTop;
-                position: absolute;
-                left:0;
-                bottom: 0.4em;
-            }
-            &:nth-child(even)::before {
-                content: " ";
-                @include triangleBottom;
-                position: absolute;
-                left:0;
-                bottom: 0.4em;
-            }
+        &:nth-child(even)::before {
+            content: " ";
+            @include triangleBottom;
+            position: absolute;
+            left:0;
+            bottom: 0.4em;
         }
     }
 }
@@ -228,6 +230,13 @@ header {
     .statistics {
         width: 100%;
     }
+    .number-statistic {
+        font-size: calc(1em + 2vw);
+    }
+    .header__search{
+        width: 100%;
+    }
+
 }
 
 
