@@ -26,6 +26,9 @@ header {
     button {
         height: 72px;
         @include buttonStyle($without, $weight-border);
+        &:hover {
+            border-bottom: 3px solid #FD5570;
+        }
     }
 }
 
@@ -66,6 +69,9 @@ header {
     @include flexCenter;
     button {
         @include buttonStyle($weight-border, $without);
+        &:hover {
+            border-bottom: 3px solid #FD5570;
+        }
     }    
 }
 
@@ -113,6 +119,14 @@ header {
                 text-decoration: $without;
                 text-align: center;
                 @include flexColumn;
+                &:hover{
+                    filter:brightness(1) invert(1); 
+                    }
+                img {
+                    &:hover{
+                    filter:brightness(1) invert(0); 
+                    }
+                }
             }
         }
     }
@@ -126,6 +140,11 @@ header {
             background: $without;
             border: $without;
             width: 50%;
+            img {
+                &:hover{
+                     filter:brightness(1) invert(1); 
+                }
+            }
         }
     }
 }
